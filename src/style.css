@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+#three-container {
+  width: 100%;
+  height: 50vh;
+} 
