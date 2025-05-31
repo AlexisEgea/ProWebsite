@@ -7,8 +7,8 @@
 
 .card {
     position: absolute;
-    width: min(500px, 90vw);
-    height: min(500px, 90vw);
+    width: 500px;
+    height: 500px;
     background-color: white;
     top: 50%;
     transform: translateY(-50%);
@@ -30,7 +30,7 @@
     top: 2%;
     right: 8%;
     color: #fff;
-    font-size: clamp(0.8em, 3vw, 1.2em);
+    font-size: 1.2em;
     font-weight: 900;
     mix-blend-mode: difference;
 }
@@ -44,8 +44,8 @@
 
 .card-resume {
     position: absolute;
-    width: min(500px, 90vw);
-    height: min(500px, 90vw);
+    width: 500px;
+    height: 500px;
     background-color: white;
     top: 50%;
     transform: translateY(-50%);
@@ -67,7 +67,7 @@
     top: 2%;
     right: 8%;
     color: #fff;
-    font-size: clamp(0.8em, 3vw, 1.2em);
+    font-size: 1.2em;
     font-weight: 900;
     mix-blend-mode: difference;
 }
