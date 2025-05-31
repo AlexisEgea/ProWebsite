@@ -1,0 +1,17 @@
+Eager to explore new horizons by solving complex problems, I am specializing in Software Development and Artificial Intelligence solutions, concentrating on three areas:
+ 1. Generative Artificial Intelligence, which covers concepts such as Data Generation, Large Language Models (LLMs), and Prompt Engineering.
+ 2. Combinatorial Artificial Intelligence, involving the observation and development of bots in video games, with an emphasis on strategic decision-making, pathfinding, and adaptive behaviors in dynamic game environments.
+ 3. Artificial Intelligence for Autonomous Vehicles, focusing on the development of algorithms for real-time decision-making in complex and dynamic environments.
+
+Currently enrolled in a Master of Science in Computer Science with a Major on Artificial Intelligence and Computer Vision, I will graduate in September 2025.
+I have prior work experience as a Developer and Engineer in Software Companies (Profile and CRNS).
+
+Over the years and thanks to the excellent courses I have followed, I have built a solid foundation, particularly in programming. 
+This foundation has allowed me to master algorithms, ensuring that I am not dependent on any specific programming language and can adapt to various situations.
+I have developed in more than 10 different programming languages, with the main ones being Java, Python, and C++.
+
+If my information has caught your attention and you would like to learn more about my profile and my future aspirations, please feel free to contact me via email at alexisegea@outlook.com or connect with me on LinkedIn.
+
+Thank you for taking the time to read this section.
+
+Alexis EGEA

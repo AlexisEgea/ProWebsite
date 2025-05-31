@@ -3,12 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <title>Alexis Egea</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/carousel.css">
+    <link rel="stylesheet" href="src/style/three.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   </head>
   <body>
     <h1>Alexis Egea</h1>
     <h2>Website in progress</h2>
+    <hr>
+    <div id="carousel-container">
+        <a href="#three-container" class="card" title="Three.js" onclick="event.preventDefault(); document.querySelector('#three-container').scrollIntoView({behavior: 'smooth'});">
+          <img src="data/information/design.jpg" alt="GitHub">
+          <span>Example Project</span>
+        </a>  
+
+       <a href="https://github.com/AlexisEgea" target="_blank" class="card" title="Mon GitHub">
+        <img src="data/information/GitHub.jpg" alt="GitHub">
+        <span>GitHub</span>
+       </a>
+
+       <a href="https://www.linkedin.com/in/AlexisEgea/" target="_blank" class="card" title="Mon LinkedIn">
+        <img src="data/information/LinkedIn.jpg" alt="LinkedIn">
+        <span>LinkedIn</span>
+       </a>
+
+       <a href="#about-me" class="card" title="About Me" onclick="event.preventDefault(); document.querySelector('#about-me').scrollIntoView({behavior: 'smooth'});">
+        <img src="data/information/about me.png" alt="">
+        <span>About Me</span>
+       </a>
+
+       <a href="#carousel-container-resume" class="card" title="Resume" onclick="event.preventDefault(); document.querySelector('#carousel-container-resume').scrollIntoView({behavior: 'smooth'});">
+        <img src="data/information/resume.png" alt="">
+        <span>Resume</span>
+       </a>  
+    </div>
+
+    <hr>
     <div id="three-container"></div>
+    <hr>
+
+    <div id="about-me" class="about-me">
+      <h3>About me</h3>
+      <br>
+      <div id="about-me-content"></div>
+
+      <script>
+        fetch('data/about me/info.txt')
+          .then(response => response.text())
+          .then(text => {
+            document.getElementById('about-me-content').innerHTML = text.replace(/\n/g, '<br>');
+          })
+          .catch(error => console.error('Error loading about me content:', error));
+      </script>
+    </div>
+
+    <hr> 
+
+    <div class="resume" id="carousel-container-resume">
+      <a href="data/resume/FR CV.pdf" target="_blank" class="card-resume">
+        <img src="data/information/resume.png" alt="">
+        <span>International Resume</span>
+      </a>  
+
+      <a href="data/resume/FR CV.pdf" target="_blank" class="card-resume">
+        <img src="data/information/resume.png" alt="">
+        <span>French Resume</span>
+      </a>  
+    </div>
+
+
+    <script src="src/js/carousel.js"></script>
     <script type="importmap">
       {
         "imports": {
@@ -18,6 +83,7 @@
         }
       }
     </script>
-    <script type="module" src="src/script.js"></script>
+    <script type="module" src="src/js/carousel.js"></script>
+    <script type="module" src="src/js/three/script.js"></script>
   </body>
 </html>

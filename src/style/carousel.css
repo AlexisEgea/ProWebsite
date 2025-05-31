@@ -1,0 +1,73 @@
+#carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20em 0;
+}
+
+.card {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+    /* opacity: 0.6; */
+}
+
+.card img {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px linear-gradient(to top, rgba(0,0,0,0.5) transparent 20%);
+}
+
+.card span{
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 900;
+    mix-blend-mode: difference;
+}
+
+#carousel-container-resume {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20em 0;
+}
+
+.card-resume {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+    /* opacity: 0.6; */
+}
+
+.card-resume img {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    -webkit-box-reflect: below 2px linear-gradient(to top, rgba(0,0,0,0.5) transparent 20%);
+}
+
+.card-resume span{
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 900;
+    mix-blend-mode: difference;
+}
