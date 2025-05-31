@@ -71,16 +71,3 @@
     font-weight: 900;
     mix-blend-mode: difference;
 }
-
-/* Media Queries for Responsive Design */
-@media screen and (max-width: 768px) {
-    #carousel-container, #carousel-container-resume {
-        margin: 10em 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #carousel-container, #carousel-container-resume {
-        margin: 5em 0;
-    }
-}
