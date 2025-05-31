@@ -1,73 +1,146 @@
 #carousel-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 20em 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: 0.2s;
-    /* opacity: 0.6; */
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .card img {
-    position: absolute;
-    height: inherit;
-    width: inherit;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    -webkit-box-reflect: below 2px linear-gradient(to top, rgba(0,0,0,0.5) transparent 20%);
 }
 
-.card span{
+.card span {
     position: absolute;
-    top: 2%;
-    right: 8%;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 900;
-    mix-blend-mode: difference;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
-#carousel-container-resume {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 20em 0;
+#three-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 50vh;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+.about-me {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.about-me h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#about-me-content {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.6;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card-resume {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    top: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: 0.2s;
-    /* opacity: 0.6; */
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .card-resume img {
-    position: absolute;
-    height: inherit;
-    width: inherit;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    -webkit-box-reflect: below 2px linear-gradient(to top, rgba(0,0,0,0.5) transparent 20%);
 }
 
-.card-resume span{
+.card-resume span {
     position: absolute;
-    top: 2%;
-    right: 8%;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 900;
-    mix-blend-mode: difference;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    #carousel-container,
+    .resume {
+        grid-template-columns: 1fr;
+    }
+
+    #three-container {
+        height: 40vh;
+    }
+
+    .card,
+    .card-resume {
+        aspect-ratio: 16/9;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        margin-top: 1rem;
+    }
+
+    hr {
+        margin: 1rem auto;
+    }
+
+    #three-container {
+        height: 30vh;
+    }
+}
+
+/* Hover effects */
+.card:hover,
+.card-resume:hover {
+    transform: scale(1.02);
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .card:hover,
+    .card-resume:hover {
+        transform: none;
+    }
 }
